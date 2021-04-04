@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<StackPane stylesheets="@css/Register.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gruppe14.explodingkitten.client.gui.controllers.RegistryController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="735.0">
+         <children>
+            <ImageView fitHeight="550.0" fitWidth="735.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/Background.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="111.0" fitWidth="415.0" layoutX="166.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/registrieren.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="138.0" layoutY="138.0" prefHeight="372.0" prefWidth="494.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Username" wrappingWidth="94.93667602539062">
+                           <font>
+                              <Font />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="60.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="username" prefHeight="26.0" prefWidth="162.0" promptText="John Smith" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Pasword" wrappingWidth="115.73672485351562">
+                           <HBox.margin>
+                              <Insets right="38.0" />
+                           </HBox.margin>
+                        </Text>
+                        <PasswordField fx:id="password" prefHeight="34.0" prefWidth="163.0" promptText="afsdggg" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Repeat password" textAlignment="CENTER" wrappingWidth="152.5367431640625" />
+                        <PasswordField fx:id="password2" promptText="afsdggg" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Age" wrappingWidth="72.5367431640625">
+                           <HBox.margin>
+                              <Insets right="80.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="age" prefHeight="26.0" prefWidth="80.0" promptText="dd.yy.mm" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#ZuruckButtonCLicked" prefHeight="44.0" prefWidth="169.0" text="Zurück" />
+                        <Button mnemonicParsing="false" onAction="#bestaetigenButtonClicked" prefHeight="44.0" prefWidth="169.0" text="Bestätigen">
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

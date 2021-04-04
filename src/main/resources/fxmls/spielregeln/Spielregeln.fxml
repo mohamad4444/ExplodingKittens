@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gruppe14.explodingkitten.client.gui.controllers.SpielregelnController">
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutY="44.0" prefHeight="490.0" prefWidth="593.0" />
+      <Group layoutX="600.0" layoutY="69.0">
+         <children>
+            <Button layoutX="1.0" layoutY="5.0" mnemonicParsing="false" onAction="#showImage1" prefHeight="43.0" prefWidth="114.0" text="1.How it Works" />
+            <Button layoutX="1.0" layoutY="55.0" mnemonicParsing="false" onAction="#showImage2" prefHeight="43.0" prefWidth="114.0" text="2.Setup" />
+            <Button layoutX="1.0" layoutY="109.0" mnemonicParsing="false" onAction="#showImage3" prefHeight="43.0" prefWidth="113.0" text="3.Taking your turn" />
+            <Button layoutX="1.0" layoutY="161.0" mnemonicParsing="false" onAction="#showImage4" prefHeight="43.0" prefWidth="113.0" text="4.Ending the Game" />
+            <Button layoutX="1.0" layoutY="210.0" mnemonicParsing="false" onAction="#showImage5" prefHeight="43.0" prefWidth="113.0" text="5.Example Turn" />
+            <Button layoutX="1.0" layoutY="263.0" mnemonicParsing="false" onAction="#showImage6" prefHeight="43.0" prefWidth="113.0" text="6.Field Guide" />
+            <Button layoutX="1.0" layoutY="317.0" mnemonicParsing="false" onAction="#showImage7" prefHeight="24.0" prefWidth="113.0" text="7.Field Guide" />
+            <Button fx:id="returnButton" layoutX="2.0" layoutY="364.0" mnemonicParsing="false" onAction="#returnToMenu" prefHeight="35.0" prefWidth="113.0" text="Return to menu" />
+         </children>
+      </Group>
+      <AnchorPane prefHeight="43.0" prefWidth="730.0" stylesheets="@../application.css">
+         <children>
+            <Text layoutX="252.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spiel Regeln" textAlignment="CENTER" wrappingWidth="206.93671989440918">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

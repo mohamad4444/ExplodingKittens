@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gruppe14.explodingkitten.client.gui.controllers.SpielVorraumController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="64.0" prefHeight="566.0" prefWidth="573.0">
+         <children>
+            <TableView fx:id="SpielVorraumTable" layoutX="5.0" prefHeight="358.0" prefWidth="564.0">
+              <columns>
+                <TableColumn fx:id="colBenutzerName" prefWidth="147.19997787475586" text="Benutzername" />
+                  <TableColumn fx:id="colGesamteSpiele" prefWidth="152.00001525878906" text="Gesamte Spiele" />
+                  <TableColumn fx:id="colGewonnen" prefWidth="132.800048828125" text="Gewonnen" />
+                  <TableColumn fx:id="colVerloren" prefWidth="130.4000244140625" styleClass="anchorBestenliste" text="Verloren" />
+              </columns>
+            </TableView>
+            <TextArea fx:id="chatTextArea" layoutY="380.0" prefHeight="138.0" prefWidth="346.0" />
+            <Button layoutX="294.0" layoutY="522.0" mnemonicParsing="false" onAction="#sendButtonClicked" text="send" />
+            <TextField fx:id="chatTextField" layoutY="522.0" onAction="#enterPressedChat" prefHeight="26.0" prefWidth="289.0" />
+            <VBox layoutX="362.0" layoutY="373.0" prefHeight="190.0" prefWidth="174.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#spielStartenButtonClicked" prefHeight="43.0" prefWidth="186.0" text="Spiel Starten" />
+                  <Button mnemonicParsing="false" onAction="#botHinzufugenEButtonClicked" prefHeight="46.0" prefWidth="192.0" text="add EasyBot" />
+                  <Button mnemonicParsing="false" onAction="#botHinzufugenSButtonClicked" prefHeight="44.0" prefWidth="196.0" text="add HardBot" />
+                  <Button mnemonicParsing="false" onAction="#zuruckButtonClicked" prefHeight="58.0" prefWidth="194.0" text="Zurück" />
+               </children>
+            </VBox>
+            <VBox layoutX="536.0" layoutY="415.0" prefHeight="94.0" prefWidth="38.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#deleteEastBotClicked" prefHeight="46.0" prefWidth="38.0" text="d" />
+                  <Button mnemonicParsing="false" onAction="#deleteHardBotClicked" prefHeight="42.0" prefWidth="38.0" text="d" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Text fx:id="roomName" layoutX="151.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="RoomName" textAlignment="CENTER" wrappingWidth="296.53675842285156">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

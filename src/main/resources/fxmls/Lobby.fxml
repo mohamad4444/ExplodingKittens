@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="628.0" stylesheets="@css/Lobby.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gruppe14.explodingkitten.client.gui.controllers.LobbyController">
+   <children>
+      <ImageView fitHeight="620.0" fitWidth="628.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/Background.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="14.0" layoutY="310.0">
+         <children>
+            <HBox>
+               <children>
+                  <TableView fx:id="onlineUsersTable" prefHeight="267.0" prefWidth="89.0">
+                     <columns>
+                        <TableColumn fx:id="colOnlineUsers" maxWidth="88.79998741149902" prefWidth="88.79998741149902" text="Online Users" />
+                     </columns>
+                     <HBox.margin>
+                        <Insets right="7.0" />
+                     </HBox.margin>
+                  </TableView>
+                  <VBox prefHeight="267.0" prefWidth="349.0">
+                     <children>
+                        <TextArea fx:id="chatTextArea" prefHeight="246.0" prefWidth="353.0" text="asd">
+                           <opaqueInsets>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </opaqueInsets>
+                        </TextArea>
+                        <HBox>
+                           <children>
+                              <TextField fx:id="chatTextField" onAction="#sendChat" prefHeight="34.0" prefWidth="294.0" text="asdffads" />
+                              <Button id="dark" fx:id="sendButton" mnemonicParsing="false" onAction="#sendButtonClicked" prefHeight="47.0" prefWidth="79.0" text="Send">
+                                 <HBox.margin>
+                                    <Insets left="2.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="7.0" />
+               </HBox.margin>
+            </HBox>
+            <VBox>
+               <children>
+                  <Text fx:id="username" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" textAlignment="CENTER" wrappingWidth="140.0">
+                     <font>
+                        <Font name="Serif Regular" size="23.0" />
+                     </font>
+                  </Text>
+                  <VBox>
+                     <children>
+                        <TextField fx:id="raumName" prefHeight="26.0" prefWidth="140.0" promptText="RaumName" styleClass="text-field">
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="raumPassword" prefHeight="26.0" prefWidth="140.0" promptText="RaumPassword">
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="spielerAnzahl" prefHeight="26.0" prefWidth="140.0" promptText="SpielerAnzahl">
+                           <VBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Button id="dark" mnemonicParsing="false" onAction="#raumBeitretenClicked" prefHeight="40.0" prefWidth="140.0" text="RaumBeitreten">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <Button id="dark" mnemonicParsing="false" onAction="#raumErstellenClicked" prefHeight="40.0" prefWidth="140.0" text="RaumErstellen">
+                           <VBox.margin>
+                              <Insets top="6.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button id="dark" mnemonicParsing="false" onAction="#zuruckClicked" prefHeight="40.0" prefWidth="140.0" text="Zürock">
+                           <VBox.margin>
+                              <Insets top="6.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="17.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TableView fx:id="raumTable" layoutX="14.0" layoutY="22.0" prefHeight="278.0" prefWidth="597.0">
+        <columns>
+          <TableColumn fx:id="colRaumName" prefWidth="189.60000038146973" text="RaumName" />
+            <TableColumn fx:id="colAktiveSpieler" prefWidth="161.5999755859375" text="AktiveSpieler" />
+            <TableColumn fx:id="colMaxSpieler" prefWidth="246.40005493164062" text="MaxSpieler" />
+        </columns>
+      </TableView>
+      <Button id="dark-blue" layoutX="14.0" layoutY="579.0" mnemonicParsing="false" onAction="#actualizeRoomsButtonClicked" prefHeight="26.0" prefWidth="22.0" text="actualizeRooms" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

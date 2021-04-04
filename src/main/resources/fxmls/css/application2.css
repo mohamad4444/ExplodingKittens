@@ -1,0 +1,68 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button {
+	-fx-background-color: darkslateblue;
+	-fx-text-fill: white;
+
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #474747;
+	-fx-background-radius: 1;
+}
+
+.table-view {
+	-fx-background-color: #474747;
+	-fx-background-radius: 1;
+	-fx-fill: white;
+	
+}
+
+
+.table-view .column-header,.table-view .filler {
+	-fx-size:40;
+	-fx-border-width: 0 0 10 0;
+	-fx-backgound-color:transparent;
+}
+.table-view .column-header .label {
+	-fx-text-fill:white;
+}
+
+#AnchorPane1 {
+	-fx-background-color: lightgray;
+
+}
+
+.handCard{
+	-fx-border-width: 2px;
+	-fx-border-color: chartreuse;
+}
+
+.text-id {
+	-fx-font: normal bold 20px 'serif';
+	-fx-fill: black;
+}
+
+.text {
+	-fx-font: normal bold 20px 'serif';
+}
+
+.text-field {
+	-fx-font: normal bold 20px 'serif';
+	-fx-background-color: white;
+	-fx-border-width: 2px;
+	-fx-border-color: chartreuse;
+}
+
+.ExplodingKittens {
+	-fx-background-color: pink;
+	-fx-font: normal bold 40px 'serif';
+	-fx-fill: blue;
+
+}
+
+#anchorPane {
+	-fx-border-width: 2px;
+	-fx-border-color: chartreuse;
+}

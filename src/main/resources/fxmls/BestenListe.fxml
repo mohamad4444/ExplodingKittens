@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="587.0" prefWidth="568.0" styleClass="anchorBestenliste" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gruppe14.explodingkitten.client.gui.controllers.BestenListeController">
+   <children>
+      <TableView fx:id="tableview" layoutX="2.0" layoutY="5.0" prefHeight="524.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="95.99999380111694" text="Name" />
+          <TableColumn fx:id="colSpiele" prefWidth="160.0" text="Gesamte Spiele" />
+            <TableColumn fx:id="colGewonnen" prefWidth="92.0" text="Gewonnen" />
+            <TableColumn fx:id="colVerloren" prefWidth="110.4000244140625" text="Verloren" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="223.0" layoutY="533.0" mnemonicParsing="false" onAction="#zuruckButtonClicked" prefHeight="39.0" prefWidth="134.0" text="Zurück" />
+   </children>
+</AnchorPane>
