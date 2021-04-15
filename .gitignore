@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,maven,eclipse,intellij+all,visualstudiocode
 
 
-
+/doc
 
 ### Eclipse ###
 .metadata
